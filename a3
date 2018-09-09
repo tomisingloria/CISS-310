@@ -3,6 +3,10 @@ class Help3 {
 		throws java.io.IOException {
 		char choice, ignore;
 		
+	/* This section of the program brings up
+	the main menu. Pressing any of the buttons
+	1-7 can bring up help on those topics */
+	
 		for(;;) {
 			do {
 				System.out.println("Help on:");
@@ -17,6 +21,11 @@ class Help3 {
 				
 				choice = (char) System.in.read();
 				
+				
+			/* this section will tell the program what to do
+			based on which number is pressed. */
+			
+			
 				do {
 					ignore = (char) System.in.read();
 				} while(ignore != '\n');
@@ -25,6 +34,10 @@ class Help3 {
 			if(choice == 'q') break;
 			
 			System.out.println("\n");
+			
+			
+			/* this part of the program states what instructions will
+			be displayed based on what number the user will enter*/
 			
 			switch(choice) {
 				case '1':
