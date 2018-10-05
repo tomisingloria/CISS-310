@@ -1,7 +1,4 @@
-/*
-	2018 09 25 -  JKT
-	This is a demo of how to create a GUI using Java Swing for assignment 5.
-*/
+
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
