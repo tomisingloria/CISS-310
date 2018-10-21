@@ -8,3 +8,5 @@ Running the program will pull all 10 of the entries.
 
 Above is a screenshot of some of the entires that present when the code is wrong. 
 This entry includes the student's name, classificatiom, email, phone number, major, and residence hall. 
+
+The different attributes and methods work together in order to allow this program to work, as seen in the code in the LeeStudents.java file. 
