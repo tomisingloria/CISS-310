@@ -26,6 +26,12 @@ class AddNumbers extends JFrame{
 	JButton b_os = new JButton("-");
 	JButton b_oc = new JButton("C");
 	
+	
+	class ButtonListener implements ActionListener {
+		@Override
+		public void actionPerformed(ActionEvent event) {
+			JButton clickec_button = (JButton)event.getSource();
+	
 	public static void main(String args[]) {
 		new AddNumbers();
 	}
@@ -34,7 +40,7 @@ class AddNumbers extends JFrame{
 		
 		int butt_height = 70;
 		int butt_width = 60;
-		
+
 		
 		
 		int row_spacing = 5;
@@ -57,13 +63,15 @@ class AddNumbers extends JFrame{
 		f.setResizable(false);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
+		int Container_w = 4 * butt_width + 5 * col_spacing;
+		int Container_h = 5 * butt_height + 6 * row_spacing;
 		Dimension calPerferredSize = new Dimension(400,200);
 		System.out.println(" calPerferredSize:" + calPerferredSize);
 		Container c = f.getContentPane();
 		c.setPreferredSize(calPerferredSize);
 		f.pack();
 		
-		f.SetVisible(true);
+		f.setVisible(true);
 		
 		b1.setLocation(col_one_x, row_two_y);
 		b2.setLocation(col_two_x, row_two_y);
@@ -98,14 +106,14 @@ class AddNumbers extends JFrame{
 		
 		
 		for(JButton onebutton : allbuttons){
+			onebutton.addActionListener(listener);
 			onebutton.setSize(butt_width, butt_height);
 			onebutton.setFont(new Font("Serif", Font.PLAIN, 15));
 			f.add(onebutton);
 		}
 	}
+		}
+	}
 }
-		
-		
-		
-		
+
 		
